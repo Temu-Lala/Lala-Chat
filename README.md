@@ -39,7 +39,7 @@ This project is a real-time live chat application built with the following techn
 npm install
 ```
 
-3. Create a `.env` file in the root directory and add the following environment variables:
+3.setup at the backend folder in index.js file 
 
 ```
 host=localhost

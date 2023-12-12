@@ -1,0 +1,78 @@
+.register_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 1px solid rgb(218, 218, 218);
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+@media screen and (min-width: 600px){
+    .register_container{
+        width: 450px;
+    }
+    .register_form{
+        width: 85%;
+    }
+}
+.register_form{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    width:100%;
+    margin-bottom: 1rem;
+    background-image: radial-gradient(blue,darkblue);
+}
+
+nav a{
+    font-weight: 800;
+    margin-left: 1rem;
+}
+.inp{
+    height: 50px;
+    font-size: large;
+}
+.register-btn{
+    width: 100%;
+    padding-block: .75rem !important;
+    background-color: black !important;
+    color: white !important;
+}
+.register-btn:hover{
+    background-color: rgba(0,0,0,0.85) !important;
+}
+.register-div form{
+    display: flex;
+    flex-direction: column;
+}
+
+.register-div form div{
+    display: flex;
+    justify-content: center;
+}
+
+.register-div label{
+    margin-top: 0.5rem;
+}
+
+.register-div input{
+    background-color: transparent;
+    color: #000;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}

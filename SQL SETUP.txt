@@ -1,0 +1,21 @@
+CREATE DATABASE chat_app;
+use chat_app;
+
+
+create table myusers
+(	
+	username varchar(255) primary key, 
+	password varchar(255) not null, 
+	fullname varchar(255) not null,
+	lastseen datetime
+);
+
+create table userchatmap
+(
+	table_id varchar(255) primary key, 
+	user1 varchar(255) not null, 
+	user2 varchar(255) not null, 
+	lastupdate datetime, 
+	FOREIGN KEY (user1) REFERENCES myusers(username), 
+	FOREIGN KEY (user2) REFERENCES myusers(username)
+);

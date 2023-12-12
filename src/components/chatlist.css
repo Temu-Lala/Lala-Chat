@@ -1,0 +1,129 @@
+.chatlistMain{
+    padding: 0;
+    
+}
+.title{
+    height:14vh;
+    background-image: linear-gradient(skyblue,darkblue);
+
+}
+
+.add-contact-form{
+    display: flex;
+}
+
+.add-user-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+}
+.add-user-btn:hover{
+    background-color: rgba(0,0,0,.9);
+}
+.add-user-icon{
+    background-color: transparent;
+    fill: white !important;
+}
+.contacts-list{
+    background-color: #7181ca;
+    max-height: calc(100vh - 300px);
+    overflow-y: scroll;
+    margin-top: 1rem;
+}
+
+.chat-entry{
+    display: flex;
+    gap: .3rem;
+    background-color: rgb(238, 238, 236);
+    padding: .2rem;
+    margin-bottom: .35rem;
+    border-radius: 5px;
+    transition: all .1s ease-in;
+}
+.chat-entry:hover{
+    background-color: rgb(226, 223, 223);
+}
+.chat-entry .contact-link{
+    flex: 1;
+}
+.last-message{
+    width: 210px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.no-msg{
+    color: rgb(193, 196, 193) !important;
+}
+.chat-delete-btn{
+    /* background-color: rgb(219, 12, 12);
+    color: white;
+    padding: .3rem .8rem;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 4px;
+    transition: all .3 ease; */
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+}
+.chat-delete-btn:hover{
+    /* background-color: rgb(233, 16, 16); */
+}
+.delete-icon{
+    background-color: transparent;
+    fill: red !important;
+    font-size: 1.8em !important;
+}
+
+
+
+
+.chatInput{
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    background-color: #caf7d2;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    width: 100%;
+    color: black;
+}
+/* Example CSS for new message indicators and styling */
+.newMessages {
+    font-weight: bold; /* or use any styling you prefer */
+}
+
+.newMessageIndicator {
+    color: green;
+    margin-left: 5px;
+}
+
+.chatBtn{
+    color: #fff;
+    background-color: black;
+    border-radius: 20%;
+    outline: none;
+    align-items: center;
+
+    border: none;
+    width: 40%;
+    border-radius: 5px;
+    padding: 10px
+}
+
+
+
+.chatUser{
+    color: black;
+    /* background-color: transparent; */
+    width: 100%;
+    text-align: left;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(1, 2, 3);
+    padding: 1rem 0.2rem;
+}
+
